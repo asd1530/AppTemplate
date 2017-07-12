@@ -1,0 +1,15 @@
+﻿<div class="container">
+    <div class="ui-grid ui-grid-responsive ui-grid-pad app-top">
+      <p-menubar [model]="items"></p-menubar>
+      
+      <div class="ui-grid-row" style="min-height:800px; max-height:800px;overflow-y: auto;background-color:#EFEFEF">
+        
+        
+        
+        <div class="container-fluid">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+  
+  </div><p-growl [(value)]="messages" life="5000" (onClose)="messages=[]"></p-growl>
+  </div>
